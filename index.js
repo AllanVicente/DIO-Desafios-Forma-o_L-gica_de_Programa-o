@@ -1,10 +1,33 @@
-/* 1 Desafio Classificador de Nível de Herói
+//Crie uma variável para armazenar o nome e a quantidade de experiência(XP) de um herói
 
-**O que deve ser utilizado**
+let nome = "Rei Arthur", xp = 0;
+let nivel = "";
 
--Variáveis
--Operadores
--Laços de repetição
--Estruturas de decisões
+//depois utilize uma estrutura de decisão para apresentar algumas mensagens abaixo:
 
-*/
+if (xp < 1000) {
+    nivel = "Ferro";
+} else if (xp >= 1001 && xp <= 2000) {
+    nivel = "Bronze";
+} else if (xp >= 2001 && xp <= 5000) {
+    nivel = "Prata";
+} else if (xp >= 5001 && xp <= 7000) {
+    nivel = "Ouro";
+} else if (xp >= 7001 && xp <= 8000) {
+    nivel = "Platina";
+} else if (xp >= 8001 && xp <= 9000) {
+    nivel = "Ascendente";
+} else if (xp >= 9001 && xp <= 10000) {
+    nivel = "Imortal";
+} else {
+    nivel = "Radiante";
+}
+
+// Ao final deve se exibir uma mensagem:
+// "O Herói de nome **{nome}** está no nível de **{nivel}**"
+console.log("O Herói de nome " + nome + " está no nível de " + nivel);
+
+
+
+
+
